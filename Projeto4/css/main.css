@@ -1,0 +1,146 @@
+@charset "UTF-9";
+
+html{
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oxygen", arial;
+}
+
+.button{
+    display: inline-block;
+    padding: .9em 2.5em;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    background-color: #58c4c4;
+}
+
+.button:hover{
+    background-color: #37a0a0;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
+.top-header{
+    /*funciona pq a imagem é um elemento de linha*/
+    text-align: center;
+}
+
+.top-header-logo{
+    margin: .5em;
+}
+
+.top-nav{
+    background-color: #612674;
+    text-align: center;
+}
+
+.top-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    /*como o padding só é aplicado em elementos do tipo bloco*/
+    display: block;
+}
+
+.top-nav a:hover{
+    background-color: #7c3792;
+}
+
+.top-content{
+    padding: 1em;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.top-content-title{
+    color: #612674;
+    font-size: 1.375em;
+    margin: 1.375em;
+}
+
+.top-content-subtitle{
+    color: #a87bb7;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.middle-content{
+    padding: 2em;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.middle-content-title{
+    font-size: 1.25em;
+    color: #652e78;
+    text-transform: uppercase;
+}
+
+.middle-content p{
+    line-height: 1.5;
+    color: #222;
+}
+/*formatar os icons*/
+/*pega a span que tem o atributo class que começa com icon*/
+.middle-content span[class^=icon]{
+    font-size: 3.5em;
+    color: #652e78;
+}
+
+.main-content{
+    padding: 2em;
+}
+
+.main-content p{
+    line-height: 1.2;
+}
+
+.main-content-article{
+    margin-bottom: 3.5em;
+}
+
+.main-content-title{
+    font-size: 1.25em;
+    color: #652e78;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: normal;
+}
+
+.rodape{
+    background-color: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.rodape-menushare{
+    background-color: #303d4c;
+    padding: .5em;
+}
+
+.rodape-menushare li{
+    margin: 0 1em;
+    display: inline-block;
+}
+
+.rodape-menushare a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
