@@ -15,7 +15,7 @@ img {
     padding-right: 1em;
 }
 
-.button{
+.button {
     padding: 15px 40px;
     border-radius: 3px;
     text-decoration: none;
@@ -26,16 +26,16 @@ img {
     transition: background .3s;
 }
 
-.button:hover{
+.button:hover {
     background-color: #929da5;
 }
 
-.button-primary{
+.button-primary {
     background-color: #63c6ae;
     color: white;
 }
 
-.button-secundary{
+.button-secundary {
     background-color: #455357;
     color: white;
 }
@@ -188,13 +188,13 @@ img {
     font-size: 14px;
 }
 
-.content{
+.content {
     background-color: #f8f9f9;
     padding: 20px 0 80px;
     border-top: 1px solid #e3e3e3;
 }
 
-.content h3{
+.content h3 {
     color: #737c85;
     font-size: 21px;
     padding-top: 40px;
@@ -207,30 +207,86 @@ img {
     word-spacing: 2px;
 }
 
-.last-articles{
+.last-articles {}
 
-}
-
-.last-articles__title{
+.last-articles__title {
     background-color: #63c6ae;
     padding: 5px 0;
 
 }
 
-.last-articles__title h2{
+.last-articles__title h2 {
     font-size: 24px;
     color: white;
     text-transform: uppercase;
     font-weight: 400;
 }
 
-.last-articles__thumbs{
+.last-articles__thumbs {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 0;
 }
-.last-articles__thumbs img{
+
+.last-articles__thumbs img {
     display: block;
     width: 100%;
+}
+
+.laptop-slider {
+    background-color: #242a2c;
+    padding: 125px 0 100px;
+    width: 100%;
+    overflow: auto;
+}
+
+.slideshow {
+    white-space: nowrap;
+}
+
+.slideshow figure {
+    display: inline-block;
+}
+
+.quote-container {
+    background-color: #63c6ae;
+    padding: 50px 0;
+    border-bottom: 10px solid #48b9a1;
+}
+
+.quote-slideshow h2 {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.quote-slideshow figcaption {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* pegando toda a tag figure que vem depois de outra tag figure que está dentro dessa hierarquia de classes */
+.no-js .quote-slideshow figure+figure {
+    margin-top: 5em;
+}
+
+.footer{
+    background-color: #242a2c;
+    padding: 50px 0 250px;
+    color: #454e51;
+    font-size: 14px;
+}
+
+.footer__links li{
+    list-style: none;
+}
+
+.footer__links a{
+    color: #454e51;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
 }
