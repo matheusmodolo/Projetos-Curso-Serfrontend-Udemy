@@ -16,4 +16,11 @@
         widthEnabled: 1025
     })
 
+    var carousel = new Carousel({
+        container: ".laptop-slider .slideshow",
+        itens: "figure",
+        btnPrev: ".prev",
+        btnNext: ".next"
+    });
+
 })
