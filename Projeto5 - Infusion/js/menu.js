@@ -7,13 +7,13 @@ function Menu(config) {
     var _opened = false;
     var _this = this;
 
-    this.btn.removeAttribute("style");
+    this.btn.removeAttribute("style")
     // closeMenu();
 
     if (this.maxWidth) {
         window.addEventListener("resize", e => {
             if (window.innerWidth > _this.maxWidth) {
-                _this.nav.removeAttribute("style");
+                _this.nav.removeAttribute("style")
                 _opened = true;
             } else if (!this.nav.getAttribute("style")) {
                 closeMenu();
@@ -25,7 +25,7 @@ function Menu(config) {
         }
     }
 
-    this.btn.addEventerListener("click", openOrClose);
+    this.btn.addEventerListener("click", openOrClose)
 
     function openOrClose() {
         if (!_opened) {
@@ -36,32 +36,32 @@ function Menu(config) {
     }
 
     function openMenu() {
-        var _top = _this.nav.getBoundingClientRect().top + "px";
+        var _top = _this.nav.getBoundingClientRect().top + "px"
+
         var _style = {
             maxHeight: "calc(100vh - " + _top + ")",
             overflow: "hidden"
         }
 
-        applyStyletoNav(_style);
+        applyStyleToNav(_style)
 
         _opened = true;
     }
 
-    function closeMenu() {
-        var _style = {
-            maxHeight: "0",
-            overflow: "hidden"
-        }
-
-        applyStyletoNav(_style);
-
-        _opened = false;
-    }
-    function applyStyletoNav(_style) {
+    function applyStyleToNav(_style) {
         Object.keys(_style).forEach(stl => {
             _this.nav.style[stl] = _style[stl]
         });
-
     }
 
+    function closeMenu() {
+        var _style = {
+            maxHeight: "0px",
+            overflow: "hidden"
+        }
+
+        applyStyleToNav(_style);
+
+        _opened = false;
+    }
 }
