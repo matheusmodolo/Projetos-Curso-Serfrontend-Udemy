@@ -134,7 +134,6 @@ img {
 .js .laptop-slider figure .show {
     opacity: 1;
     position: static;
-
 }
 
 .js .laptop-slider .prev,
@@ -268,8 +267,6 @@ img {
     font-size: 14px;
     word-spacing: 2px;
 }
-
-.last-articles {}
 
 .last-articles__title {
     background-color: #63c6ae;
